@@ -37,11 +37,17 @@ CREATE TABLE Equipment (
     AvailabilityStatus ENUM('Available', 'Rented', 'Under Maintenance') DEFAULT 'Available',
     CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+-- Insert Equipment Data
 INSERT INTO Equipment (Name, Description, Category, RentalRate, AvailabilityStatus)
 VALUES
-('Canon DSLR Camera', 'Professional-grade camera for photography', 'Cameras', 25.00, 'Available'),
+('Canon EOS Camera', 'Professional-grade camera for photography', 'Cameras', 25.00, 'Available'),
 ('Hammer Drill', 'Heavy-duty drill for construction work', 'Tools', 15.00, 'Available'),
-('Tennis Racket', 'Standard tennis racket for sports', 'Sports Gear', 10.00, 'Available');
+('Tennis Racket', 'Standard tennis racket for sports', 'Sports Gear', 10.00, 'Available'),
+('Sony PlayStation 5', 'Next-gen gaming console', 'Video Game Consoles', 50.00, 'Available'),
+('Apple MacBook Pro', 'High-performance laptop for professionals', 'Laptops', 100.00, 'Available'),
+('Samsung 65" TV', 'Large screen 4K television for home entertainment', 'Televisions', 75.00, 'Available'),
+('Epson Projector', 'Portable projector for presentations and events', 'Projectors', 30.00, 'Available');
 
 -- Rentals Table
 CREATE TABLE Rentals (
