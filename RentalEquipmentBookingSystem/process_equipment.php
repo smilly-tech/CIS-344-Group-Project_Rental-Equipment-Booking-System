@@ -96,7 +96,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <h1>Rental Request Confirmation</h1>
 
         <?php
-        // Display the confirmation message
         echo $confirmationMessage;
         ?>
 
