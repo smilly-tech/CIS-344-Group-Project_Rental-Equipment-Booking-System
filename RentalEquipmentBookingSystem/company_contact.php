@@ -92,20 +92,19 @@ error_reporting(E_ALL);
         <h1>Contact Us</h1>
 
         <?php
-        // Check if the form was submitted
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $name = $_POST['name'];
             $email = $_POST['email'];
             $message = $_POST['message'];
 
-            // Process the form (e.g., send an email, save to a file, etc.)
+        
             echo "<p>Thank you, $name! We have received your message:</p>";
             echo "<p><strong>Your Message:</strong> $message</p>";
             echo "<p>We will respond to your email at <strong>$email</strong> shortly.</p>";
         }
         ?>
 
-        <!-- Contact Form -->
+    
         <form action="company_contact.php" method="POST">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
